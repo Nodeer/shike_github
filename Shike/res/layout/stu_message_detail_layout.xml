@@ -1,0 +1,162 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clipChildren="false"
+    android:background="@color/main_bg"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/title_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:padding="10dp">
+
+        <ImageView
+            android:id="@+id/tv_tool_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:src="@drawable/icon_back" />
+
+
+        <TextView
+            android:id="@+id/tiwen_times"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:layout_centerInParent="true"
+            android:text="提问次数1/10"
+            style="@style/text_20_333333"
+            android:gravity="center" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/right_button"
+            android:paddingBottom="5dp"
+            android:paddingTop="5dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:text="结束"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            style="@style/text_16_white"
+            android:background="@drawable/stu_slide_btn2_bg" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:padding="10dp"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/nick_name"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="小红鱼"
+                style="@style/text_16_gray" />
+
+            <TextView
+                android:id="@+id/tv_data"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                style="@style/text_14_gray"
+                android:layout_height="wrap_content"
+                android:text="2014-04-19 21:27" />
+        </LinearLayout>
+
+
+        <FrameLayout
+            android:layout_width="fill_parent"
+            android:paddingTop="20dp"
+            android:paddingBottom="20dp"
+            android:paddingLeft="15dp"
+            android:id="@+id/img_frame"
+            android:layout_weight="1"
+            android:clipChildren="false"
+            android:background="@drawable/blackboard_bg_img"
+            android:layout_height="match_parent">
+
+            <android.support.v4.view.ViewPager
+                android:id="@+id/message_viewpager"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginRight="20dp"
+                android:clipChildren="false"></android.support.v4.view.ViewPager>
+        </FrameLayout>
+
+
+        <FrameLayout
+            android:layout_width="fill_parent"
+            android:layout_height="130dp">
+
+
+            <ScrollView
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent">
+
+                <LinearLayout
+                    android:id="@+id/voice_layout"
+                    android:layout_width="fill_parent"
+                    android:padding="10dp"
+                    android:orientation="vertical"
+                    android:layout_height="100dp"></LinearLayout>
+            </ScrollView>
+
+
+            <include
+                android:id="@+id/voice_recordding_layout"
+                layout="@layout/voice_recording_layout"
+                android:layout_gravity="center_horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </FrameLayout>
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:padding="10dp"
+        android:id="@+id/bottom_layout"
+        android:background="@color/white"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/img_button"
+            android:layout_width="0dp"
+            android:drawableLeft="@drawable/icon_camera_nor"
+            android:background="@drawable/gray_btn_bg"
+            android:padding="5dp"
+            android:text="我要拍照"
+            style="@style/text_18_333333"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+        <Button
+            android:id="@+id/record_btn"
+            android:layout_width="0dp"
+            android:drawableLeft="@drawable/record_icon_bg"
+            android:background="@drawable/gray_btn_bg"
+            android:padding="5dp"
+            android:text="语音"
+            style="@style/text_18_333333"
+            android:layout_marginLeft="10dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+    </LinearLayout>
+
+
+</LinearLayout>

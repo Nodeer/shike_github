@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_bg"
+    android:orientation="vertical">
+
+    <include layout="@layout/title_layout" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="我的学分:"
+            style="@style/text_16_gray" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/xuefen_point"
+            style="@style/text_16_red" />
+
+    </LinearLayout>
+
+    <View style="@style/list_cell_divider" />
+
+    <RelativeLayout
+        android:id="@+id/teacher_inputmoney_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/duihuan_xianjin_relative"
+        android:layout_margin="10dp">
+
+        <TextView
+            android:id="@+id/teacher_inputmoney1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/teacher_inputEdit"
+            android:text="我要兑换"
+            style="@style/text_16_333333" />
+
+        <TextView
+            android:id="@+id/fen"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:text="分"
+            style="@style/text_16_333333"
+            android:layout_alignBaseline="@id/teacher_inputmoney1" />
+
+        <EditText
+            android:id="@+id/teacher_inputEdit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/teacher_inputmoney1"
+            android:layout_toLeftOf="@id/fen"
+            style="@style/text_16_333333"
+            android:layout_marginLeft="3dp"
+            android:layout_marginRight="3dp"
+            android:background="@drawable/white_btn_nor"
+            android:hint="请输入1000的倍数"
+            android:numeric="integer"
+            android:padding="5dp" />
+
+    </RelativeLayout>
+
+    <View style="@style/list_cell_divider" />
+
+    <TextView
+        android:id="@+id/expain"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/teacher_inputmoney_layout"
+        android:layout_margin="10dp"
+        android:text="兑换现金最低3000学分起兑；每月10日和25日为兑换现金日;根据您的申请时间先后排序，我们会尽快为您兑换。"
+        style="@style/text_16_gray" />
+
+    <View style="@style/list_cell_divider" />
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/blue_btn_bg"
+        android:text="确定"
+        android:id="@+id/tv_cash_comf"
+        android:paddingLeft="50dp"
+        android:paddingRight="50dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="30dp"
+        style="@style/text_30_white" />
+</LinearLayout>

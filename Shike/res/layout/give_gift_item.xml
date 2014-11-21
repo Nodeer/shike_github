@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:orientation="vertical"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_margin="5dp"
+        android:layout_gravity="center"
+        android:layout_height="wrap_content">
+
+        <pl.droidsonroids.gif.GifImageView
+            android:layout_width="100dp"
+            android:id="@+id/gif_image"
+            android:layout_centerHorizontal="true"
+            android:layout_height="100dp"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/select_icon"
+            android:layout_alignRight="@id/gif_image"
+            android:layout_alignTop="@id/gif_image"
+            android:visibility="gone"
+            android:src="@drawable/checked_icon" />
+
+        <TextView
+            android:id="@+id/fenshu_text"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:layout_below="@id/gif_image"
+            android:layout_centerHorizontal="true"
+            android:text="分数"
+            android:background="@color/green1"
+            style="@style/text_16_white" />
+
+
+    </RelativeLayout>
+
+
+</LinearLayout>

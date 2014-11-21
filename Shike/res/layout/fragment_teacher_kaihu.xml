@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@color/main_bg"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+
+    <include layout="@layout/title_layout" />
+
+    <LinearLayout
+        android:id="@+id/teacher_account_kaihu"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical"
+        android:layout_margin="10dp">
+
+        <LinearLayout
+            android:id="@+id/teacher_account_name"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:gravity="center_vertical"
+            android:layout_marginTop="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="*"
+                style="@style/text_16_red" />
+
+            <TextView
+                android:id="@+id/kaihuName"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:text="姓名:"
+                android:gravity="right"
+                style="@style/text_16_333333" />
+
+            <EditText
+                android:id="@+id/kaihu_edittext"
+                android:hint="请输入真实姓名"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/white_btn_nor"
+                android:layout_marginLeft="5dp"
+                android:padding="10dp"
+                style="@style/text_16_333333" />
+        </LinearLayout>
+
+        <LinearLayout
+
+            android:id="@+id/teacher_account_bangbank"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:gravity="center_vertical"
+            android:layout_marginTop="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="*"
+                style="@style/text_16_red" />
+
+            <TextView
+                android:id="@+id/kaihubangbank"
+                android:text="银行:"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                style="@style/text_16_333333" />
+
+            <LinearLayout
+                android:id="@+id/bind_bank_btn"
+                android:background="@drawable/white_btn_nor"
+                android:layout_width="fill_parent"
+                android:layout_marginLeft="5dp"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/kaihu_bangbank_edittext"
+                    android:hint="请选择绑定银行"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    style="@style/text_16_333333" />
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="fill_parent"
+                    android:src="@drawable/pulldown1"
+                    android:scaleType="centerInside"
+                    android:background="@drawable/gray_btn_bg" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/teacher_account_bank"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:gravity="center_vertical"
+            android:layout_marginTop="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="*"
+                style="@style/text_16_red" />
+
+            <TextView
+                android:id="@+id/kaihubank"
+                android:text="开户支行:"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                style="@style/text_16_333333" />
+
+            <EditText
+                android:id="@+id/kaihu_bank_edittext"
+                android:hint="请输入开户行名称"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/white_btn_nor"
+                android:layout_marginLeft="5dp"
+                android:padding="10dp"
+                style="@style/text_16_333333" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/teacher_account_kahao"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:gravity="center_vertical"
+            android:layout_marginTop="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="*"
+                style="@style/text_16_red" />
+
+            <TextView
+                android:id="@+id/kaihukahao"
+                android:text="卡号:"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                style="@style/text_16_333333" />
+
+            <EditText
+                android:id="@+id/kaihu_kahao"
+                android:hint="请输入银行卡号"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/white_btn_nor"
+                android:layout_marginLeft="5dp"
+                android:padding="10dp"
+                style="@style/text_16_333333" />
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/teacher_account_dengjitext"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/blue_btn_bg"
+            android:gravity="center"
+            android:text="登记"
+            android:textSize="30dp"
+            android:textColor="@color/white" />
+    </LinearLayout>
+
+</LinearLayout>

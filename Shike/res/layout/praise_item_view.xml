@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_margin="5dp"
+        android:layout_gravity="center"
+        android:layout_height="wrap_content">
+        <pl.droidsonroids.gif.GifImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:id="@+id/gif_image" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/select_icon"
+            android:layout_alignRight="@id/gif_image"
+            android:layout_alignTop="@id/gif_image"
+            android:visibility="gone"
+            android:src="@drawable/checked_icon" />
+    </RelativeLayout>
+
+
+</FrameLayout>

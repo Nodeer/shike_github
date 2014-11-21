@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="@color/main_bg"
+    android:layout_height="match_parent">
+
+
+    <include layout="@layout/title_layout" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_margin="10dp"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/jieduan_text"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:paddingTop="5dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:paddingRight="5dp"
+            android:paddingBottom="5dp"
+            android:background="@drawable/gray_btn_bg"
+            android:drawableRight="@drawable/pulldown1"
+            android:text="选择阶段"
+            style="@style/text_16_black" />
+
+        <TextView
+            android:id="@+id/xueke_text"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:paddingTop="5dp"
+            android:gravity="center"
+            android:paddingRight="5dp"
+            android:paddingBottom="5dp"
+            android:background="@drawable/gray_btn_bg"
+            android:drawableRight="@drawable/pulldown1"
+            android:text="选择学科"
+            style="@style/text_16_black" />
+        <TextView
+            android:id="@+id/diqu_text"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:gravity="center"
+            android:paddingRight="5dp"
+            android:background="@drawable/gray_btn_bg"
+            android:drawableRight="@drawable/pulldown1"
+            android:text="选择地区"
+            style="@style/text_16_black" />
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:id="@+id/nodata_layout"
+        android:visibility="gone"
+        android:layout_height="fill_parent">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+            style="@style/text_18_333333"
+            android:text="您当前没有添加任何老师"
+            android:layout_height="wrap_content" />
+
+        </FrameLayout>
+
+    <ListView
+        android:id="@+id/online_lv"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:dividerHeight="1px"
+        android:listSelector="@drawable/list_selector_color"
+        android:divider="@color/ui_bg_divider" />
+</LinearLayout>

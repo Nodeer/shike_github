@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_bg"
+    android:orientation="vertical">
+
+    <include layout="@layout/title_layout" />
+
+    <LinearLayout
+        android:id="@+id/rl_tillte"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/btn_blue_nor"
+        android:paddingTop="10dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:layout_marginTop="10dp">
+
+        <TextView
+            android:id="@+id/tv_exchange_info"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="收入明细 "
+            android:padding="10dp"
+            android:background="@drawable/bg_blue_white"
+            android:textColor="@drawable/text_color_white_black"
+            android:textSize="@dimen/share_text" />
+
+        <TextView
+            android:id="@+id/tv_acc_balance"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:padding="10dp"
+            android:background="@drawable/bg_blue_white"
+            android:text="兑换记录"
+            android:textColor="@drawable/text_color_white_black"
+            android:textSize="@dimen/share_text" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/li_th_content"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/undine_linearLayout"
+        android:orientation="vertical"></LinearLayout>
+</LinearLayout>

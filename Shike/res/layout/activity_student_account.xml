@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_bg"
+    android:orientation="vertical">
+
+    <include layout="@layout/title_layout" />
+
+    <LinearLayout
+        android:id="@+id/rl_tillte"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/green1"
+        android:paddingTop="10dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:layout_marginTop="10dp">
+
+        <TextView
+            android:id="@+id/tv_cz_reg"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="充值记录 "
+            android:padding="10dp"
+            android:background="@drawable/bg_green_white"
+            android:textColor="@drawable/text_color_white_black"
+            android:textSize="@dimen/share_text" />
+
+        <TextView
+            android:id="@+id/tv_sy_reg"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:padding="10dp"
+            android:background="@drawable/bg_green_white"
+            android:text="使用记录"
+            android:textColor="@drawable/text_color_white_black"
+            android:textSize="@dimen/share_text" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/li_th_content"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/undine_linearLayout"
+        android:orientation="vertical"></LinearLayout>
+</LinearLayout>
